@@ -12,6 +12,10 @@ const config = {
           },
         },
       },
+      {
+        test: /\.css/i,
+        use: ["style-loader", "css-loader"], // loaders applied from right to left
+      },
     ],
   },
   output: {
